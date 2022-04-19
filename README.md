@@ -17,8 +17,6 @@ Below you can find an example image of how this looks
 
 We will use the Console (UI) in this tutorial, but can also use the APIs to interact with the database.
 
-* RdBzpLRxDCMY9PWu
-
 ## 1. Create a Cluster and Database 
 
 As first we need to create a new database and collection. We can do this by navigating to "Database" in the left menu and clicking "Browse Collections".
