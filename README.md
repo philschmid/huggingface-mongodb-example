@@ -142,7 +142,7 @@ After inserting our document we have to refresh the page one time to see that ou
 
 ![insert document](images/10_sentiment_document.png)
 
-
+We can also check the logs of our trigger to see the events and how long the execution took. In our case the the execution was `2839ms`, which is probably to slove for real-time use-cases but lets see if we can work with MongoDB to improve the integration of Hugging Face Transformers.
 
 # Resources
 
