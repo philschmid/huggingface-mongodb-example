@@ -149,4 +149,4 @@ We can also check the logs of our trigger to see the events and how long the exe
 * [Hugging Face Hub](https://huggingface.co/)
 * [Documentation: Hugging Face Inference API](https://huggingface.co/docs/api-inference/index)
 * [Documentation: Change Events](https://www.mongodb.com/docs/manual/reference/change-events/)
-* [Documentation:Database Triggers](https://www.mongodb.com/docs/realm/triggers/database-triggers/)
+* [Documentation: Database Triggers](https://www.mongodb.com/docs/realm/triggers/database-triggers/)
