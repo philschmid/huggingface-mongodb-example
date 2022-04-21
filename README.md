@@ -2,7 +2,7 @@
 
 This repository contains code and instructions on how to integrate Hugging Face Transformers with MongoDB using Database Triggers to enrich your documents with state-of-the-art Machine Learning.
 
-In thit tutorial you will learn how to set up Triggers to automatically predict the sentiment of new documents in your MongoDB database and add them as additional fields to your documents.
+In this tutorial, you will learn how to set up Triggers to automatically predict the sentiment of new documents in your MongoDB database and add them as additional fields to your documents.
 
 # Tutorial
 
@@ -23,9 +23,9 @@ As first we need to create a new database and collection. We can do this by navi
 
 ![database overview](images/01_database.png)
 
-After that we need to click on "Add My Own Data" and can then define our database name and collection name, e.g.
+After that, we need to click on "Add My Own Data" and can then define our database name and collection name, e.g.
 
-Database name: `HuggingFace`
+Database name: `HuggingFace`  
 Collection name: `SupportTickets`
 
 To create the database and collection click "Create".
@@ -43,7 +43,7 @@ To get started you need to navigate to "Data Services" Triggers and click "Add T
 
 To create our Database Trigger we need to fill in a few details, like a Name (`sentiment_trigger`), Link Data Source, Trigger Source Details.
 
-After we defined the name we can select our cluster in the "Link Data Source" dropdown and hit "link". 
+After we defined the name we can select our cluster in the "Link Data Source" dropdown and hit "link".  
 _**NOTE: You need to "link" it otherwise the database and collection won't show up in the trigger source details**_  
 
 After linking our datasource we can seleclt our cluster name, database name and collection name in the "Trigger Source Details" dropdown and select as operation type "insert".
@@ -118,7 +118,7 @@ If we go back to the Trigger overview we can see that our Trigger is successfull
 ![enabled trigger](images/07_enabled_trigger.png)
 
 
-## 3. Test our Database Trigger by insserting new documents
+## 3. Test our Database Trigger by inserting new documents
 
 To test our Trigger in Action we can go back to the Database navigation and into our collection and "insert document". 
 
@@ -142,8 +142,11 @@ After inserting our document we have to refresh the page one time to see that ou
 
 ![insert document](images/10_sentiment_document.png)
 
-We can also check the logs of our trigger to see the events and how long the execution took. In our case the the execution was `2839ms`, which is probably to slove for real-time use-cases but lets see if we can work with MongoDB to improve the integration of Hugging Face Transformers.
+We can also check the logs of our trigger to see the events and how long the execution took. In our case the execution was `2839ms`, which is probably too slove for real-time use-cases but lets see if we can work with MongoDB to improve the integration of Hugging Face Transformers.
 
 # Resources
 
+* [Hugging Face Hub](https://huggingface.co/)
+* [Documentation: Hugging Face Inference API](https://huggingface.co/docs/api-inference/index)
 * [Documentation: Change Events](https://www.mongodb.com/docs/manual/reference/change-events/)
+* [Documentation:Database Triggers](https://www.mongodb.com/docs/realm/triggers/database-triggers/)
